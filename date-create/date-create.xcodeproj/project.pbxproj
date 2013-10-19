@@ -21,6 +21,11 @@
 		4FAF86141812E86D00BB3991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAF85F61812E86D00BB3991 /* UIKit.framework */; };
 		4FAF861C1812E86D00BB3991 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF861A1812E86D00BB3991 /* InfoPlist.strings */; };
 		4FAF861E1812E86D00BB3991 /* date_createTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF861D1812E86D00BB3991 /* date_createTests.m */; };
+		4FAF86291812EAB100BB3991 /* CatagoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF86281812EAB100BB3991 /* CatagoriesViewController.m */; };
+		4FAF862C1812EB3800BB3991 /* PackagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF862B1812EB3700BB3991 /* PackagesViewController.m */; };
+		4FAF862F1812EB8800BB3991 /* PackageDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF862E1812EB8800BB3991 /* PackageDetailsViewController.m */; };
+		4FAF86321812EC0C00BB3991 /* FinalDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF86311812EC0C00BB3991 /* FinalDateViewController.m */; };
+		4FAF86351812ECF800BB3991 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF86341812ECF800BB3991 /* PaymentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		4FAF86191812E86D00BB3991 /* date-createTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "date-createTests-Info.plist"; sourceTree = "<group>"; };
 		4FAF861B1812E86D00BB3991 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4FAF861D1812E86D00BB3991 /* date_createTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = date_createTests.m; sourceTree = "<group>"; };
+		4FAF86271812EAB100BB3991 /* CatagoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatagoriesViewController.h; sourceTree = "<group>"; };
+		4FAF86281812EAB100BB3991 /* CatagoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatagoriesViewController.m; sourceTree = "<group>"; };
+		4FAF862A1812EB3700BB3991 /* PackagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackagesViewController.h; sourceTree = "<group>"; };
+		4FAF862B1812EB3700BB3991 /* PackagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackagesViewController.m; sourceTree = "<group>"; };
+		4FAF862D1812EB8800BB3991 /* PackageDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageDetailsViewController.h; sourceTree = "<group>"; };
+		4FAF862E1812EB8800BB3991 /* PackageDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageDetailsViewController.m; sourceTree = "<group>"; };
+		4FAF86301812EC0C00BB3991 /* FinalDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalDateViewController.h; sourceTree = "<group>"; };
+		4FAF86311812EC0C00BB3991 /* FinalDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalDateViewController.m; sourceTree = "<group>"; };
+		4FAF86331812ECF800BB3991 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		4FAF86341812ECF800BB3991 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +130,16 @@
 				4FAF86011812E86D00BB3991 /* AppDelegate.h */,
 				4FAF86021812E86D00BB3991 /* AppDelegate.m */,
 				4FAF86041812E86D00BB3991 /* Main.storyboard */,
+				4FAF86331812ECF800BB3991 /* PaymentViewController.h */,
+				4FAF86341812ECF800BB3991 /* PaymentViewController.m */,
+				4FAF86301812EC0C00BB3991 /* FinalDateViewController.h */,
+				4FAF86311812EC0C00BB3991 /* FinalDateViewController.m */,
+				4FAF862A1812EB3700BB3991 /* PackagesViewController.h */,
+				4FAF862B1812EB3700BB3991 /* PackagesViewController.m */,
+				4FAF862D1812EB8800BB3991 /* PackageDetailsViewController.h */,
+				4FAF862E1812EB8800BB3991 /* PackageDetailsViewController.m */,
+				4FAF86271812EAB100BB3991 /* CatagoriesViewController.h */,
+				4FAF86281812EAB100BB3991 /* CatagoriesViewController.m */,
 				4FAF86071812E86D00BB3991 /* ViewController.h */,
 				4FAF86081812E86D00BB3991 /* ViewController.m */,
 				4FAF860A1812E86D00BB3991 /* Images.xcassets */,
@@ -249,9 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FAF862C1812EB3800BB3991 /* PackagesViewController.m in Sources */,
 				4FAF86091812E86D00BB3991 /* ViewController.m in Sources */,
+				4FAF862F1812EB8800BB3991 /* PackageDetailsViewController.m in Sources */,
+				4FAF86321812EC0C00BB3991 /* FinalDateViewController.m in Sources */,
 				4FAF86031812E86D00BB3991 /* AppDelegate.m in Sources */,
+				4FAF86291812EAB100BB3991 /* CatagoriesViewController.m in Sources */,
 				4FAF85FF1812E86D00BB3991 /* main.m in Sources */,
+				4FAF86351812ECF800BB3991 /* PaymentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

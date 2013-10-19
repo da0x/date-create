@@ -4,6 +4,46 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
+        <!--Catagories View Controller-->
+        <scene sceneID="7yU-1h-zGA">
+            <objects>
+                <viewController id="dxf-7o-qFi" customClass="CatagoriesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t6u-0k-PaV"/>
+                        <viewControllerLayoutGuide type="bottom" id="B3A-gf-Pn6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7pL-ia-8CH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bb3-bZ-1lJ"/>
+                    <connections>
+                        <segue destination="oki-Bv-QRH" kind="push" id="PIW-7x-gkN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PB9-RL-nwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="27"/>
+        </scene>
+        <!--Package Detail View Controller-->
+        <scene sceneID="66g-zw-Q3N">
+            <objects>
+                <viewController id="Fdb-Dv-5br" customClass="PackageDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9WO-ae-Fqm"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ur-BX-v6N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6WQ-R8-m7F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xuq-Ch-4Dg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2382" y="-633"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -18,10 +58,77 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="BHM-jb-lfh"/>
+                    <connections>
+                        <segue destination="dxf-7o-qFi" kind="push" id="Tjx-QI-ynK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="118"/>
+            <point key="canvasLocation" x="1007" y="27"/>
+        </scene>
+        <!--Packages View Controller-->
+        <scene sceneID="dqL-EU-sil">
+            <objects>
+                <viewController id="oki-Bv-QRH" customClass="PackagesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1YH-04-Z5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="zK6-La-BxL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wH3-M1-Lsj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W7b-VO-NVh"/>
+                    <connections>
+                        <segue destination="Fdb-Dv-5br" kind="modal" id="WEN-e1-GRY"/>
+                        <segue destination="1eO-4y-Gaj" kind="push" id="ftU-em-pKv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M3C-eu-HkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="27"/>
+        </scene>
+        <!--Final Date View Controller-->
+        <scene sceneID="wJl-7S-j1J">
+            <objects>
+                <viewController id="1eO-4y-Gaj" customClass="FinalDateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b7I-00-CG3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Asv-hE-7qS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dyr-iB-fz6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x1D-ks-fjr"/>
+                    <connections>
+                        <segue destination="Mks-iU-2No" kind="push" id="TtN-ld-Msf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUp-Xu-cTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392" y="27"/>
+        </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="I2U-Uv-sGc">
+            <objects>
+                <viewController id="Mks-iU-2No" customClass="PaymentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RPd-Ah-wfb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ugl-BZ-GEp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xRI-AB-f8l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lka-9g-pds"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgx-UK-GEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2815" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4xb-FB-ghB">
@@ -39,7 +146,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xe1-XQ-QEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="444" y="118"/>
+            <point key="canvasLocation" x="580" y="27"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
