@@ -4,28 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Catagories View Controller-->
-        <scene sceneID="7yU-1h-zGA">
-            <objects>
-                <viewController id="dxf-7o-qFi" customClass="CatagoriesViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="t6u-0k-PaV"/>
-                        <viewControllerLayoutGuide type="bottom" id="B3A-gf-Pn6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7pL-ia-8CH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="bb3-bZ-1lJ"/>
-                    <connections>
-                        <segue destination="oki-Bv-QRH" kind="push" identifier="packages" id="PIW-7x-gkN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PB9-RL-nwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1430" y="27"/>
-        </scene>
         <!--Package Detail View Controller-->
         <scene sceneID="66g-zw-Q3N">
             <objects>
@@ -66,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xuq-Ch-4Dg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382" y="-633"/>
+            <point key="canvasLocation" x="2376" y="-633"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -83,12 +61,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="BHM-jb-lfh"/>
                     <connections>
-                        <segue destination="dxf-7o-qFi" kind="push" identifier="catagories" id="Tjx-QI-ynK"/>
+                        <segue destination="oki-Bv-QRH" kind="push" id="BG3-wK-mj9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="27"/>
+            <point key="canvasLocation" x="1345" y="27"/>
         </scene>
         <!--Packages View Controller-->
         <scene sceneID="dqL-EU-sil">
@@ -163,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUp-Xu-cTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382" y="27"/>
+            <point key="canvasLocation" x="2376" y="27"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="I2U-Uv-sGc">
@@ -263,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgx-UK-GEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2815" y="27"/>
+            <point key="canvasLocation" x="2807" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4xb-FB-ghB">
@@ -281,7 +259,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xe1-XQ-QEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="580" y="27"/>
+            <point key="canvasLocation" x="866" y="27"/>
         </scene>
     </scenes>
     <resources>
