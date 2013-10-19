@@ -19,7 +19,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bb3-bZ-1lJ"/>
                     <connections>
-                        <segue destination="oki-Bv-QRH" kind="push" id="PIW-7x-gkN"/>
+                        <segue destination="oki-Bv-QRH" kind="push" identifier="packages" id="PIW-7x-gkN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PB9-RL-nwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -59,7 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="BHM-jb-lfh"/>
                     <connections>
-                        <segue destination="dxf-7o-qFi" kind="push" id="Tjx-QI-ynK"/>
+                        <segue destination="dxf-7o-qFi" kind="push" identifier="catagories" id="Tjx-QI-ynK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -81,8 +81,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="W7b-VO-NVh"/>
                     <connections>
-                        <segue destination="Fdb-Dv-5br" kind="modal" id="WEN-e1-GRY"/>
-                        <segue destination="1eO-4y-Gaj" kind="push" id="ftU-em-pKv"/>
+                        <segue destination="Fdb-Dv-5br" kind="modal" identifier="details" id="WEN-e1-GRY"/>
+                        <segue destination="1eO-4y-Gaj" kind="push" identifier="final" id="ftU-em-pKv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3C-eu-HkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,12 +104,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="x1D-ks-fjr"/>
                     <connections>
-                        <segue destination="Mks-iU-2No" kind="push" id="TtN-ld-Msf"/>
+                        <segue destination="Mks-iU-2No" kind="push" identifier="payment" id="TtN-ld-Msf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUp-Xu-cTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2392" y="27"/>
+            <point key="canvasLocation" x="2382" y="27"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="I2U-Uv-sGc">
