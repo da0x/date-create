@@ -27,6 +27,7 @@
 		4FAF86321812EC0C00BB3991 /* FinalDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF86311812EC0C00BB3991 /* FinalDateViewController.m */; };
 		4FAF86351812ECF800BB3991 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF86341812ECF800BB3991 /* PaymentViewController.m */; };
 		4FAF86381812FA7800BB3991 /* dancing.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF86371812FA7800BB3991 /* dancing.png */; };
+		4FAF863D1812FCF000BB3991 /* heart.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF863B1812FCF000BB3991 /* heart.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		4FAF86331812ECF800BB3991 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		4FAF86341812ECF800BB3991 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 		4FAF86371812FA7800BB3991 /* dancing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dancing.png; path = Images/dancing.png; sourceTree = "<group>"; };
+		4FAF863B1812FCF000BB3991 /* heart.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heart.jpeg; path = Images/heart.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		4FAF86361812FA6E00BB3991 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4FAF863B1812FCF000BB3991 /* heart.jpeg */,
 				4FAF86371812FA7800BB3991 /* dancing.png */,
 			);
 			name = images;
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FAF860B1812E86D00BB3991 /* Images.xcassets in Resources */,
+				4FAF863D1812FCF000BB3991 /* heart.jpeg in Resources */,
 				4FAF85FD1812E86D00BB3991 /* InfoPlist.strings in Resources */,
 				4FAF86381812FA7800BB3991 /* dancing.png in Resources */,
 				4FAF86061812E86D00BB3991 /* Main.storyboard in Resources */,
