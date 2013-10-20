@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F73CC4E2B74B9AB69F5299 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5651C7F281E8483BBC85438A /* libPods.a */; };
+		1872C92118131F46004C2F5B /* CollectionViewDateLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872C92018131F46004C2F5B /* CollectionViewDateLayout.m */; };
+		1872C92418131FD5004C2F5B /* dateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872C92318131FD5004C2F5B /* dateObject.m */; };
+		1872C92718132198004C2F5B /* swipeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872C92618132198004C2F5B /* swipeCollectionView.m */; };
+		1872C92A1813228A004C2F5B /* swipeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872C9291813228A004C2F5B /* swipeCollectionViewCell.m */; };
+		1872C92D18135127004C2F5B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1872C92C18135127004C2F5B /* QuartzCore.framework */; };
 		4FAF85F31812E86D00BB3991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAF85F21812E86D00BB3991 /* Foundation.framework */; };
 		4FAF85F51812E86D00BB3991 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAF85F41812E86D00BB3991 /* CoreGraphics.framework */; };
 		4FAF85F71812E86D00BB3991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAF85F61812E86D00BB3991 /* UIKit.framework */; };
@@ -41,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1872C91F18131F46004C2F5B /* CollectionViewDateLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDateLayout.h; sourceTree = "<group>"; };
+		1872C92018131F46004C2F5B /* CollectionViewDateLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDateLayout.m; sourceTree = "<group>"; };
+		1872C92218131FD5004C2F5B /* dateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateObject.h; sourceTree = "<group>"; };
+		1872C92318131FD5004C2F5B /* dateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dateObject.m; sourceTree = "<group>"; };
+		1872C92518132198004C2F5B /* swipeCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swipeCollectionView.h; sourceTree = "<group>"; };
+		1872C92618132198004C2F5B /* swipeCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swipeCollectionView.m; sourceTree = "<group>"; };
+		1872C9281813228A004C2F5B /* swipeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swipeCollectionViewCell.h; sourceTree = "<group>"; };
+		1872C9291813228A004C2F5B /* swipeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swipeCollectionViewCell.m; sourceTree = "<group>"; };
+		1872C92C18135127004C2F5B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4FAF85EF1812E86D00BB3991 /* date-create.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date-create.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAF85F21812E86D00BB3991 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FAF85F41812E86D00BB3991 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +87,8 @@
 		4FAF86341812ECF800BB3991 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 		4FAF86371812FA7800BB3991 /* dancing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dancing.png; path = Images/dancing.png; sourceTree = "<group>"; };
 		4FAF863B1812FCF000BB3991 /* heart.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heart.jpeg; path = Images/heart.jpeg; sourceTree = "<group>"; };
+		5651C7F281E8483BBC85438A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45172082A0249148AF44FF4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +96,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1872C92D18135127004C2F5B /* QuartzCore.framework in Frameworks */,
 				4FAF85F51812E86D00BB3991 /* CoreGraphics.framework in Frameworks */,
 				4FAF85F71812E86D00BB3991 /* UIKit.framework in Frameworks */,
 				4FAF85F31812E86D00BB3991 /* Foundation.framework in Frameworks */,
+				07F73CC4E2B74B9AB69F5299 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +117,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1872C92B1813229C004C2F5B /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1872C9281813228A004C2F5B /* swipeCollectionViewCell.h */,
+				1872C9291813228A004C2F5B /* swipeCollectionViewCell.m */,
+				1872C92218131FD5004C2F5B /* dateObject.h */,
+				1872C92318131FD5004C2F5B /* dateObject.m */,
+				1872C91F18131F46004C2F5B /* CollectionViewDateLayout.h */,
+				1872C92018131F46004C2F5B /* CollectionViewDateLayout.m */,
+				1872C92518132198004C2F5B /* swipeCollectionView.h */,
+				1872C92618132198004C2F5B /* swipeCollectionView.m */,
+			);
+			name = collectionView;
+			sourceTree = "<group>";
+		};
 		4FAF85E61812E86D00BB3991 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +139,7 @@
 				4FAF86171812E86D00BB3991 /* date-createTests */,
 				4FAF85F11812E86D00BB3991 /* Frameworks */,
 				4FAF85F01812E86D00BB3991 /* Products */,
+				A45172082A0249148AF44FF4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,10 +155,12 @@
 		4FAF85F11812E86D00BB3991 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1872C92C18135127004C2F5B /* QuartzCore.framework */,
 				4FAF85F21812E86D00BB3991 /* Foundation.framework */,
 				4FAF85F41812E86D00BB3991 /* CoreGraphics.framework */,
 				4FAF85F61812E86D00BB3991 /* UIKit.framework */,
 				4FAF86111812E86D00BB3991 /* XCTest.framework */,
+				5651C7F281E8483BBC85438A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +172,7 @@
 				4FAF86011812E86D00BB3991 /* AppDelegate.h */,
 				4FAF86021812E86D00BB3991 /* AppDelegate.m */,
 				4FAF86041812E86D00BB3991 /* Main.storyboard */,
+				1872C92B1813229C004C2F5B /* collectionView */,
 				4FAF86331812ECF800BB3991 /* PaymentViewController.h */,
 				4FAF86341812ECF800BB3991 /* PaymentViewController.m */,
 				4FAF86301812EC0C00BB3991 /* FinalDateViewController.h */,
@@ -198,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FAF86211812E86D00BB3991 /* Build configuration list for PBXNativeTarget "date-create" */;
 			buildPhases = (
+				6E4357D7AD414DDE951F5CCE /* Check Pods Manifest.lock */,
 				4FAF85EB1812E86D00BB3991 /* Sources */,
 				4FAF85EC1812E86D00BB3991 /* Frameworks */,
 				4FAF85ED1812E86D00BB3991 /* Resources */,
+				03D51FE4FCA74FAB9ECA67D4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,6 +325,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03D51FE4FCA74FAB9ECA67D4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E4357D7AD414DDE951F5CCE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FAF85EB1812E86D00BB3991 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -293,9 +366,13 @@
 				4FAF862C1812EB3800BB3991 /* PackagesViewController.m in Sources */,
 				4FAF86091812E86D00BB3991 /* ViewController.m in Sources */,
 				4FAF862F1812EB8800BB3991 /* PackageDetailsViewController.m in Sources */,
+				1872C92718132198004C2F5B /* swipeCollectionView.m in Sources */,
 				4FAF86321812EC0C00BB3991 /* FinalDateViewController.m in Sources */,
+				1872C92418131FD5004C2F5B /* dateObject.m in Sources */,
 				4FAF86031812E86D00BB3991 /* AppDelegate.m in Sources */,
+				1872C92A1813228A004C2F5B /* swipeCollectionViewCell.m in Sources */,
 				4FAF86291812EAB100BB3991 /* CatagoriesViewController.m in Sources */,
+				1872C92118131F46004C2F5B /* CollectionViewDateLayout.m in Sources */,
 				4FAF85FF1812E86D00BB3991 /* main.m in Sources */,
 				4FAF86351812ECF800BB3991 /* PaymentViewController.m in Sources */,
 			);
@@ -421,6 +498,7 @@
 		};
 		4FAF86221812E86D00BB3991 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A45172082A0249148AF44FF4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -434,6 +512,7 @@
 		};
 		4FAF86231812E86D00BB3991 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A45172082A0249148AF44FF4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -506,6 +585,7 @@
 				4FAF86231812E86D00BB3991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FAF86241812E86D00BB3991 /* Build configuration list for PBXNativeTarget "date-createTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +594,7 @@
 				4FAF86261812E86D00BB3991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

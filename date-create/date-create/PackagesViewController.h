@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PackagesViewController : UIViewController
+@interface PackagesViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UIGestureRecognizerDelegate>
 
 @end
