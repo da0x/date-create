@@ -253,9 +253,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4FAF85EE1812E86D00BB3991 /* date-create */ = {
+		4FAF85EE1812E86D00BB3991 /* create */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FAF86211812E86D00BB3991 /* Build configuration list for PBXNativeTarget "date-create" */;
+			buildConfigurationList = 4FAF86211812E86D00BB3991 /* Build configuration list for PBXNativeTarget "create" */;
 			buildPhases = (
 				6E4357D7AD414DDE951F5CCE /* Check Pods Manifest.lock */,
 				4FAF85EB1812E86D00BB3991 /* Sources */,
@@ -267,7 +267,7 @@
 			);
 			dependencies = (
 			);
-			name = "date-create";
+			name = create;
 			productName = "date-create";
 			productReference = 4FAF85EF1812E86D00BB3991 /* date-create.app */;
 			productType = "com.apple.product-type.application";
@@ -317,7 +317,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4FAF85EE1812E86D00BB3991 /* date-create */,
+				4FAF85EE1812E86D00BB3991 /* create */,
 				4FAF860F1812E86D00BB3991 /* date-createTests */,
 			);
 		};
@@ -419,7 +419,7 @@
 /* Begin PBXTargetDependency section */
 		4FAF86161812E86D00BB3991 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4FAF85EE1812E86D00BB3991 /* date-create */;
+			target = 4FAF85EE1812E86D00BB3991 /* create */;
 			targetProxy = 4FAF86151812E86D00BB3991 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -606,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FAF86211812E86D00BB3991 /* Build configuration list for PBXNativeTarget "date-create" */ = {
+		4FAF86211812E86D00BB3991 /* Build configuration list for PBXNativeTarget "create" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FAF86221812E86D00BB3991 /* Debug */,
