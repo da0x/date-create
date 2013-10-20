@@ -13,7 +13,6 @@
 		1872C92718132198004C2F5B /* swipeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872C92618132198004C2F5B /* swipeCollectionView.m */; };
 		1872C92A1813228A004C2F5B /* swipeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872C9291813228A004C2F5B /* swipeCollectionViewCell.m */; };
 		1872C92D18135127004C2F5B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1872C92C18135127004C2F5B /* QuartzCore.framework */; };
-		1872C93018142F2B004C2F5B /* UIImage+ScaleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872C92F18142F2B004C2F5B /* UIImage+ScaleImage.m */; };
 		1872C93718142F3E004C2F5B /* blue-man-group.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1872C93118142F3E004C2F5B /* blue-man-group.jpg */; };
 		1872C93818142F3E004C2F5B /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1872C93218142F3E004C2F5B /* boat.jpg */; };
 		1872C93918142F3E004C2F5B /* comedy-show.png in Resources */ = {isa = PBXBuildFile; fileRef = 1872C93318142F3E004C2F5B /* comedy-show.png */; };
@@ -63,8 +62,6 @@
 		1872C9281813228A004C2F5B /* swipeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swipeCollectionViewCell.h; sourceTree = "<group>"; };
 		1872C9291813228A004C2F5B /* swipeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swipeCollectionViewCell.m; sourceTree = "<group>"; };
 		1872C92C18135127004C2F5B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		1872C92E18142F2B004C2F5B /* UIImage+ScaleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScaleImage.h"; sourceTree = "<group>"; };
-		1872C92F18142F2B004C2F5B /* UIImage+ScaleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScaleImage.m"; sourceTree = "<group>"; };
 		1872C93118142F3E004C2F5B /* blue-man-group.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blue-man-group.jpg"; sourceTree = "<group>"; };
 		1872C93218142F3E004C2F5B /* boat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boat.jpg; sourceTree = "<group>"; };
 		1872C93318142F3E004C2F5B /* comedy-show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comedy-show.png"; sourceTree = "<group>"; };
@@ -189,8 +186,6 @@
 				1872C93418142F3E004C2F5B /* cubs-game.jpg */,
 				1872C93518142F3E004C2F5B /* painting.jpg */,
 				1872C93618142F3E004C2F5B /* sushi.jpg */,
-				1872C92E18142F2B004C2F5B /* UIImage+ScaleImage.h */,
-				1872C92F18142F2B004C2F5B /* UIImage+ScaleImage.m */,
 				4FAF86361812FA6E00BB3991 /* images */,
 				4FAF86011812E86D00BB3991 /* AppDelegate.h */,
 				4FAF86021812E86D00BB3991 /* AppDelegate.m */,
@@ -402,7 +397,6 @@
 				1872C92A1813228A004C2F5B /* swipeCollectionViewCell.m in Sources */,
 				4FAF86291812EAB100BB3991 /* CatagoriesViewController.m in Sources */,
 				1872C92118131F46004C2F5B /* CollectionViewDateLayout.m in Sources */,
-				1872C93018142F2B004C2F5B /* UIImage+ScaleImage.m in Sources */,
 				4FAF85FF1812E86D00BB3991 /* main.m in Sources */,
 				4FAF86351812ECF800BB3991 /* PaymentViewController.m in Sources */,
 			);

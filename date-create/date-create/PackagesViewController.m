@@ -12,6 +12,7 @@
 #import "swipeCollectionView.h"
 #import "CollectionViewDateLayout.h"
 
+
 static NSString * const dateCellIdentifier = @"dateCell";
 
 
@@ -58,17 +59,17 @@ static NSString * const dateCellIdentifier = @"dateCell";
 {
     self.arrayOfDates = [NSMutableArray new];
     
-    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date1" andImageName:@"date1Image" andDescription:@"date1 description" andNumberOfDollarSigns:2]];
+    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date1" andImageName:@"blue-man-group.jpg" andDescription:@"date1 description" andNumberOfDollarSigns:2]];
 
-    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date2" andImageName:@"date2Image" andDescription:@"date2 description" andNumberOfDollarSigns:3]];
+    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date2" andImageName:@"boat.jpg" andDescription:@"boat" andNumberOfDollarSigns:3]];
 
-    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date3" andImageName:@"date3Image" andDescription:@"date3 description" andNumberOfDollarSigns:1]];
+    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date3" andImageName:@"comedy-show.png" andDescription:@"date3 description" andNumberOfDollarSigns:1]];
 
-    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date4" andImageName:@"date4Image" andDescription:@"date4 description" andNumberOfDollarSigns:4]];
+    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date4" andImageName:@"cubs-game.jpg" andDescription:@"date4 description" andNumberOfDollarSigns:4]];
 
-    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date5" andImageName:@"date5Image" andDescription:@"date5 description" andNumberOfDollarSigns:2]];
+    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date5" andImageName:@"painting.jpg" andDescription:@"date5 description" andNumberOfDollarSigns:2]];
 
-    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date6" andImageName:@"date6Image" andDescription:@"date6 description" andNumberOfDollarSigns:1]];
+    [self.arrayOfDates addObject:[[dateObject alloc] initWithName:@"date6" andImageName:@"sushi.jpg" andDescription:@"date6 description" andNumberOfDollarSigns:1]];
     
    // [self.mySwipeCollectionView reloadData];
     
@@ -85,7 +86,8 @@ static NSString * const dateCellIdentifier = @"dateCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     swipeCollectionViewCell *cell = [self.mySwipeCollectionView dequeueReusableCellWithReuseIdentifier:@"dateCell" forIndexPath:indexPath];
-    cell.swipeDateCardImageView.image = [UIImage imageNamed:((dateObject*)[self.arrayOfDates objectAtIndex:indexPath.row]).imageName];
+    
+    cell.imageView.image = [UIImage imageNamed:((dateObject*)[self.arrayOfDates objectAtIndex:indexPath.row]).imageName];
     cell.swipeDateCardTitleLabel.text = ((dateObject*)[self.arrayOfDates objectAtIndex:indexPath.row]).titleOfDate;
     cell.swipeDateCardTitleLabel.text = ((dateObject*)[self.arrayOfDates objectAtIndex:indexPath.row]).descriptionOfDate;
     
@@ -140,11 +142,15 @@ static NSString * const dateCellIdentifier = @"dateCell";
         [UIView animateWithDuration:.3f animations:^{
             cell.center = CGPointMake(cellStartCenter.x - 300, cellStartCenter.y - 30);
             cell.transform = CGAffineTransformMakeRotation(100);
+            self.mySwipeCollectionView.backgroundColor = [UIColor colorWithRed:249.0f/255.0f green:0.0f/255.0f blue:18.0f/255.0f alpha:.4];
+
 
         } completion:^(BOOL finished){
             dateObject *objectToRemove = [self.arrayOfDates objectAtIndex:indexPath.row];
             [self.arrayOfDates removeObject:objectToRemove];
             [self.mySwipeCollectionView reloadData];
+            self.mySwipeCollectionView.backgroundColor = [UIColor whiteColor];
+
         }];
         
     }
@@ -168,11 +174,15 @@ static NSString * const dateCellIdentifier = @"dateCell";
         [UIView animateWithDuration:.3f animations:^{
             cell.center = CGPointMake(cellStartCenter.x + 300, cellStartCenter.y - 30);
             cell.transform = CGAffineTransformMakeRotation(100);
+            self.mySwipeCollectionView.backgroundColor = [UIColor colorWithRed:69.0f/255.0f green:255.0f/255.0f blue:3.0f/255.0f alpha:.2];
             
         } completion:^(BOOL finished){
             dateObject *objectToRemove = [self.arrayOfDates objectAtIndex:indexPath.row];
             [self.arrayOfDates removeObject:objectToRemove];
             [self.mySwipeCollectionView reloadData];
+            self.mySwipeCollectionView.backgroundColor = [UIColor whiteColor];
+
+            
         }];
         
     }
