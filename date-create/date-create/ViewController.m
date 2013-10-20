@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    
+}
+- (IBAction)inviteEricaAction:(id)sender;
 
 @end
 
@@ -26,4 +30,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)inviteEricaAction:(id)sender
+{
+    [self performSegueWithIdentifier:@"inviteToSwipeVC" sender:self];
+}
 @end
