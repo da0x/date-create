@@ -72,7 +72,7 @@
 		1872C93618142F3E004C2F5B /* sushi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sushi.jpg; sourceTree = "<group>"; };
 		1872C93D18144391004C2F5B /* DateTitleReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTitleReusableView.h; sourceTree = "<group>"; };
 		1872C93E18144391004C2F5B /* DateTitleReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTitleReusableView.m; sourceTree = "<group>"; };
-		4FAF85EF1812E86D00BB3991 /* date-create.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date-create.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAF85EF1812E86D00BB3991 /* date-create.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "date-create.app"; path = create.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAF85F21812E86D00BB3991 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FAF85F41812E86D00BB3991 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4FAF85F61812E86D00BB3991 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -187,17 +187,11 @@
 		4FAF85F81812E86D00BB3991 /* date-create */ = {
 			isa = PBXGroup;
 			children = (
-				1872C93118142F3E004C2F5B /* blue-man-group.jpg */,
-				1872C93218142F3E004C2F5B /* boat.jpg */,
-				1872C93318142F3E004C2F5B /* comedy-show.png */,
-				1872C93418142F3E004C2F5B /* cubs-game.jpg */,
-				1872C93518142F3E004C2F5B /* painting.jpg */,
-				1872C93618142F3E004C2F5B /* sushi.jpg */,
+				1872C92B1813229C004C2F5B /* collectionView */,
 				4FAF86361812FA6E00BB3991 /* images */,
 				4FAF86011812E86D00BB3991 /* AppDelegate.h */,
 				4FAF86021812E86D00BB3991 /* AppDelegate.m */,
 				4FAF86041812E86D00BB3991 /* Main.storyboard */,
-				1872C92B1813229C004C2F5B /* collectionView */,
 				4FAF86331812ECF800BB3991 /* PaymentViewController.h */,
 				4FAF86341812ECF800BB3991 /* PaymentViewController.m */,
 				4FAF86301812EC0C00BB3991 /* FinalDateViewController.h */,
@@ -248,6 +242,12 @@
 		4FAF86361812FA6E00BB3991 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1872C93118142F3E004C2F5B /* blue-man-group.jpg */,
+				1872C93218142F3E004C2F5B /* boat.jpg */,
+				1872C93318142F3E004C2F5B /* comedy-show.png */,
+				1872C93418142F3E004C2F5B /* cubs-game.jpg */,
+				1872C93518142F3E004C2F5B /* painting.jpg */,
+				1872C93618142F3E004C2F5B /* sushi.jpg */,
 				4FAF863E181441F500BB3991 /* jill.jpg */,
 				4FAF863B1812FCF000BB3991 /* heart.jpeg */,
 				4FAF86371812FA7800BB3991 /* dancing.png */,

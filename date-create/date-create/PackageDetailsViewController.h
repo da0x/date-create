@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PackageDetailsViewController : UIViewController
+@property IBOutlet UIButton * doneButton;
 
+-(IBAction)unwind:(id)sender;
 @end

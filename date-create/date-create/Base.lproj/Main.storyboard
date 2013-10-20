@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="AeF-fq-cVn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="AeF-fq-cVn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Package Detail View Controller-->
+        <!--Package Details View Controller-->
         <scene sceneID="66g-zw-Q3N">
             <objects>
-                <viewController id="Fdb-Dv-5br" customClass="PackageDetailViewController" sceneMemberID="viewController">
+                <viewController id="Fdb-Dv-5br" customClass="PackageDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9WO-ae-Fqm"/>
                         <viewControllerLayoutGuide type="bottom" id="2Ur-BX-v6N"/>
@@ -38,9 +38,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="378"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIu-bl-zie">
+                                <rect key="frame" x="138" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="unwind:" destination="Fdb-Dv-5br" eventType="touchUpInside" id="gRR-tA-mdH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="doneButton" destination="HIu-bl-zie" id="NjY-g1-Fhe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xuq-Ch-4Dg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,7 +245,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUp-Xu-cTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2376" y="27"/>
+            <point key="canvasLocation" x="2376" y="43"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="I2U-Uv-sGc">
@@ -333,7 +346,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgx-UK-GEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2807" y="27"/>
+            <point key="canvasLocation" x="2810" y="43"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4xb-FB-ghB">
