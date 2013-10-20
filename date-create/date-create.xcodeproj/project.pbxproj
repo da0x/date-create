@@ -41,6 +41,7 @@
 		4FAF86351812ECF800BB3991 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF86341812ECF800BB3991 /* PaymentViewController.m */; };
 		4FAF86381812FA7800BB3991 /* dancing.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF86371812FA7800BB3991 /* dancing.png */; };
 		4FAF863D1812FCF000BB3991 /* heart.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF863B1812FCF000BB3991 /* heart.jpeg */; };
+		4FAF863F181441F500BB3991 /* jill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF863E181441F500BB3991 /* jill.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		4FAF86341812ECF800BB3991 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 		4FAF86371812FA7800BB3991 /* dancing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dancing.png; path = Images/dancing.png; sourceTree = "<group>"; };
 		4FAF863B1812FCF000BB3991 /* heart.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heart.jpeg; path = Images/heart.jpeg; sourceTree = "<group>"; };
+		4FAF863E181441F500BB3991 /* jill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jill.jpg; path = Images/jill.jpg; sourceTree = "<group>"; };
 		5651C7F281E8483BBC85438A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45172082A0249148AF44FF4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -246,6 +248,7 @@
 		4FAF86361812FA6E00BB3991 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4FAF863E181441F500BB3991 /* jill.jpg */,
 				4FAF863B1812FCF000BB3991 /* heart.jpeg */,
 				4FAF86371812FA7800BB3991 /* dancing.png */,
 			);
@@ -340,6 +343,7 @@
 				4FAF86381812FA7800BB3991 /* dancing.png in Resources */,
 				1872C93C18142F3E004C2F5B /* sushi.jpg in Resources */,
 				4FAF86061812E86D00BB3991 /* Main.storyboard in Resources */,
+				4FAF863F181441F500BB3991 /* jill.jpg in Resources */,
 				1872C93B18142F3E004C2F5B /* painting.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
