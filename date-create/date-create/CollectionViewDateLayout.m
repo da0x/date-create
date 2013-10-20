@@ -9,6 +9,8 @@
 #import "CollectionViewDateLayout.h"
 
 static NSString * const swipeDateLayoutCell = @"dateCell";
+NSString * const DateCreateTitleKind = @"dateTitle";
+
 static NSUInteger const RotationCount = 32;
 static NSUInteger const RotationStride = 3;
 
@@ -53,6 +55,8 @@ static NSUInteger const RotationStride = 3;
     self.itemSize = CGSizeMake(125.0f, 125.0f);
     self.interItemSpacingY = 12.0f;
     self.numberOfColumns = 1;
+    self.titleHeight = 26.0f;
+
     
     // create rotations at load so that they are consistent during prepareLayout
     NSMutableArray *rotations = [NSMutableArray arrayWithCapacity:RotationCount];
@@ -81,6 +85,8 @@ static NSUInteger const RotationStride = 3;
 {
     NSMutableDictionary *newLayoutInfo = [NSMutableDictionary dictionary];
     NSMutableDictionary *cellLayoutInfo = [NSMutableDictionary dictionary];
+    NSMutableDictionary *titleLayoutInfo = [NSMutableDictionary dictionary];
+
     
     NSInteger sectionCount = [self.collectionView numberOfSections];
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
@@ -98,10 +104,21 @@ static NSUInteger const RotationStride = 3;
 
             cellLayoutInfo[indexPath] = itemAttributes;
             
+            if (indexPath.item == 0) {
+                UICollectionViewLayoutAttributes *titleAttributes = [UICollectionViewLayoutAttributes
+                                                                     layoutAttributesForSupplementaryViewOfKind:DateCreateTitleKind
+                                                                     withIndexPath:indexPath];
+                titleAttributes.frame = [self frameForDateTitleAtIndexPath:indexPath];
+                
+                titleLayoutInfo[indexPath] = titleAttributes;
+            }
+            
         }
     }
     
     newLayoutInfo[swipeDateLayoutCell] = cellLayoutInfo;
+    newLayoutInfo[DateCreateTitleKind] = titleLayoutInfo;
+
     
     self.layoutInfo = newLayoutInfo;
 }
@@ -137,13 +154,16 @@ static NSUInteger const RotationStride = 3;
     if ([self.collectionView numberOfSections] % self.numberOfColumns) rowCount++;
     
     CGFloat height = self.itemInsets.top +
-    rowCount * self.itemSize.height + (rowCount - 1) * self.interItemSpacingY +
-    self.itemInsets.bottom;
+    rowCount * self.itemSize.height + (rowCount - 1) * self.interItemSpacingY + rowCount * self.titleHeight + self.itemInsets.bottom;
     
     return CGSizeMake(self.collectionView.bounds.size.width, height);
 }
 
-
+- (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)kind
+                                                                     atIndexPath:(NSIndexPath *)indexPath
+{
+    return self.layoutInfo[DateCreateTitleKind][indexPath];
+}
 
 #pragma mark - Private
 
@@ -162,9 +182,18 @@ static NSUInteger const RotationStride = 3;
     CGFloat originX = floorf(self.itemInsets.left + (self.itemSize.width + spacingX) * column);
     
     CGFloat originY = floor(self.itemInsets.top +
-                            (self.itemSize.height + self.interItemSpacingY) * row);
+                            (self.itemSize.height + self.titleHeight + self.interItemSpacingY) * row);
     
     return CGRectMake(originX, originY, self.itemSize.width * 4, self.itemSize.height * 4);
+}
+
+- (CGRect)frameForDateTitleAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGRect frame = [self frameForDateCardAtIndexPath:indexPath];
+    frame.origin.y += frame.size.height;
+    frame.size.height = self.titleHeight;
+    
+    return frame;
 }
 
 #pragma mark - Properties
@@ -212,4 +241,13 @@ static NSUInteger const RotationStride = 3;
     return [self.rotations[offset % RotationCount] CATransform3DValue];
 }
 
+
+- (void)setTitleHeight:(CGFloat)titleHeight
+{
+    if (_titleHeight == titleHeight) return;
+    
+    _titleHeight = titleHeight;
+    
+    [self invalidateLayout];
+}
 @end

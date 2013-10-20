@@ -11,9 +11,12 @@
 #import "swipeCollectionViewCell.h"
 #import "swipeCollectionView.h"
 #import "CollectionViewDateLayout.h"
+#import "DateTitleReusableView.h"
 
 
 static NSString * const dateCellIdentifier = @"dateCell";
+static NSString * const dateTitleIdentifier = @"dateTitle";
+
 
 
 @interface PackagesViewController ()
@@ -46,6 +49,10 @@ static NSString * const dateCellIdentifier = @"dateCell";
     [self.mySwipeCollectionView registerClass:[swipeCollectionViewCell class]
             forCellWithReuseIdentifier:dateCellIdentifier];
     //self.mySwipeCollectionView.backgroundColor = [UIColor colorWithWhite:0.85f alpha:1.0f];
+    
+    [self.mySwipeCollectionView registerClass:[DateTitleReusableView class]
+            forSupplementaryViewOfKind:DateCreateTitleKind
+                   withReuseIdentifier:dateTitleIdentifier];
 
 }
 
@@ -102,6 +109,22 @@ static NSString * const dateCellIdentifier = @"dateCell";
 
     
     return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
+           viewForSupplementaryElementOfKind:(NSString *)kind
+                                 atIndexPath:(NSIndexPath *)indexPath;
+{
+    DateTitleReusableView *titleView =
+    [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                       withReuseIdentifier:dateTitleIdentifier
+                                              forIndexPath:indexPath];
+    
+    dateObject *date = self.arrayOfDates[indexPath.row];
+    
+    titleView.titleLabel.text = date.titleOfDate;
+    
+    return titleView;
 }
 
 #pragma mark - View Rotation
