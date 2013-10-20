@@ -88,6 +88,15 @@ static NSString * const dateCellIdentifier = @"dateCell";
     cell.swipeDateCardImageView.image = [UIImage imageNamed:((dateObject*)[self.arrayOfDates objectAtIndex:indexPath.row]).imageName];
     cell.swipeDateCardTitleLabel.text = ((dateObject*)[self.arrayOfDates objectAtIndex:indexPath.row]).titleOfDate;
     cell.swipeDateCardTitleLabel.text = ((dateObject*)[self.arrayOfDates objectAtIndex:indexPath.row]).descriptionOfDate;
+    
+    UISwipeGestureRecognizer *leftGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftGestureRecognizer:)];
+    leftGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    [cell addGestureRecognizer:leftGestureRecognizer];
+    
+    UISwipeGestureRecognizer *rightGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightGestureRecognizer:)];
+    rightGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    [cell addGestureRecognizer:rightGestureRecognizer];
+
 
     
     return cell;
@@ -110,6 +119,62 @@ static NSString * const dateCellIdentifier = @"dateCell";
     } else {
         self.swipeDatesLayout.numberOfColumns = 2;
         self.swipeDatesLayout.itemInsets = UIEdgeInsetsMake(22.0f, 22.0f, 13.0f, 22.0f);
+    }
+}
+
+- (void)leftGestureRecognizer:(UISwipeGestureRecognizer*)sender
+{
+    if (sender.state != UIGestureRecognizerStateEnded) {
+        return;
+    }
+    CGPoint p = [sender locationInView:self.mySwipeCollectionView];
+    
+    NSIndexPath *indexPath = [self.mySwipeCollectionView indexPathForItemAtPoint:p];
+    if (indexPath == nil){
+        NSLog(@"couldn't find index path");
+    } else {
+        // get the cell at indexPath (the one you long pressed)
+        UICollectionViewCell* cell = [self.mySwipeCollectionView cellForItemAtIndexPath:indexPath];
+        CGPoint cellStartCenter = cell.center;
+        // do stuff with the cell
+        [UIView animateWithDuration:.3f animations:^{
+            cell.center = CGPointMake(cellStartCenter.x - 300, cellStartCenter.y - 30);
+            cell.transform = CGAffineTransformMakeRotation(100);
+
+        } completion:^(BOOL finished){
+            dateObject *objectToRemove = [self.arrayOfDates objectAtIndex:indexPath.row];
+            [self.arrayOfDates removeObject:objectToRemove];
+            [self.mySwipeCollectionView reloadData];
+        }];
+        
+    }
+}
+
+- (void)rightGestureRecognizer:(UISwipeGestureRecognizer*)sender
+{
+    if (sender.state != UIGestureRecognizerStateEnded) {
+        return;
+    }
+    CGPoint p = [sender locationInView:self.mySwipeCollectionView];
+    
+    NSIndexPath *indexPath = [self.mySwipeCollectionView indexPathForItemAtPoint:p];
+    if (indexPath == nil){
+        NSLog(@"couldn't find index path");
+    } else {
+        // get the cell at indexPath (the one you long pressed)
+        UICollectionViewCell* cell = [self.mySwipeCollectionView cellForItemAtIndexPath:indexPath];
+        CGPoint cellStartCenter = cell.center;
+        // do stuff with the cell
+        [UIView animateWithDuration:.3f animations:^{
+            cell.center = CGPointMake(cellStartCenter.x + 300, cellStartCenter.y - 30);
+            cell.transform = CGAffineTransformMakeRotation(100);
+            
+        } completion:^(BOOL finished){
+            dateObject *objectToRemove = [self.arrayOfDates objectAtIndex:indexPath.row];
+            [self.arrayOfDates removeObject:objectToRemove];
+            [self.mySwipeCollectionView reloadData];
+        }];
+        
     }
 }
 @end
