@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5762AF4B-4F6A-4484-9EDE-551BF0D05B7D</string>
+	<string>AA8B6550-B419-4CBC-96F9-4E07FEA134B2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>date-create</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6DF4D069-3163-40C4-A648-7C69312EA707</key>
-		<string>https://github.com/naterock101/date-create.git</string>
+		<key>5E9873AF-F293-43C8-A3D8-E2E98BE1DDC1</key>
+		<string>https://github.com/daher-alfawares/date-create.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>date-create/date-create.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6DF4D069-3163-40C4-A648-7C69312EA707</key>
+		<key>5E9873AF-F293-43C8-A3D8-E2E98BE1DDC1</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/naterock101/date-create.git</string>
+	<string>https://github.com/daher-alfawares/date-create.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6DF4D069-3163-40C4-A648-7C69312EA707</string>
+	<string>5E9873AF-F293-43C8-A3D8-E2E98BE1DDC1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6DF4D069-3163-40C4-A648-7C69312EA707</string>
+			<string>5E9873AF-F293-43C8-A3D8-E2E98BE1DDC1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>date-create</string>
 		</dict>
