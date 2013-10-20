@@ -24,7 +24,7 @@
         self.titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
         self.titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth |
         UIViewAutoresizingFlexibleHeight;
-        self.titleLabel.backgroundColor = [UIColor clearColor];
+        self.titleLabel.backgroundColor = [UIColor greenColor];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.font = [UIFont boldSystemFontOfSize:13.0f];
         self.titleLabel.textColor = [UIColor redColor];
