@@ -19,6 +19,7 @@
 		1872C93A18142F3E004C2F5B /* cubs-game.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1872C93418142F3E004C2F5B /* cubs-game.jpg */; };
 		1872C93B18142F3E004C2F5B /* painting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1872C93518142F3E004C2F5B /* painting.jpg */; };
 		1872C93C18142F3E004C2F5B /* sushi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1872C93618142F3E004C2F5B /* sushi.jpg */; };
+		1872C93F18144391004C2F5B /* DateTitleReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872C93E18144391004C2F5B /* DateTitleReusableView.m */; };
 		4FAF85F31812E86D00BB3991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAF85F21812E86D00BB3991 /* Foundation.framework */; };
 		4FAF85F51812E86D00BB3991 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAF85F41812E86D00BB3991 /* CoreGraphics.framework */; };
 		4FAF85F71812E86D00BB3991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAF85F61812E86D00BB3991 /* UIKit.framework */; };
@@ -69,6 +70,8 @@
 		1872C93418142F3E004C2F5B /* cubs-game.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cubs-game.jpg"; sourceTree = "<group>"; };
 		1872C93518142F3E004C2F5B /* painting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = painting.jpg; sourceTree = "<group>"; };
 		1872C93618142F3E004C2F5B /* sushi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sushi.jpg; sourceTree = "<group>"; };
+		1872C93D18144391004C2F5B /* DateTitleReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTitleReusableView.h; sourceTree = "<group>"; };
+		1872C93E18144391004C2F5B /* DateTitleReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTitleReusableView.m; sourceTree = "<group>"; };
 		4FAF85EF1812E86D00BB3991 /* date-create.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date-create.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAF85F21812E86D00BB3991 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FAF85F41812E86D00BB3991 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 				1872C92018131F46004C2F5B /* CollectionViewDateLayout.m */,
 				1872C92518132198004C2F5B /* swipeCollectionView.h */,
 				1872C92618132198004C2F5B /* swipeCollectionView.m */,
+				1872C93D18144391004C2F5B /* DateTitleReusableView.h */,
+				1872C93E18144391004C2F5B /* DateTitleReusableView.m */,
 			);
 			name = collectionView;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FAF862C1812EB3800BB3991 /* PackagesViewController.m in Sources */,
+				1872C93F18144391004C2F5B /* DateTitleReusableView.m in Sources */,
 				4FAF86091812E86D00BB3991 /* ViewController.m in Sources */,
 				4FAF862F1812EB8800BB3991 /* PackageDetailsViewController.m in Sources */,
 				1872C92718132198004C2F5B /* swipeCollectionView.m in Sources */,
